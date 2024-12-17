@@ -1,0 +1,24 @@
+{
+  "lang":{
+    "lang":"en"
+  },
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "selling": "best-selling products",
+    "Discounts": "Discounts"
+  },
+  "heading": {
+    "DiscountedProducts": "Discounted products"
+  },
+  "menu": {
+    "offer": "Our special offer"
+  },
+  "footer": {
+    "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ad quae nisi! Atque harum, asperiores est reiciendis laboriosam exercitationem.",
+    "quickLinks": "quick links",
+    "aboutUs": "About",
+    "contactInfo": "contact info",
+    "businessHours": "Business Hours"
+  }
+}

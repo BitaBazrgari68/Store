@@ -1,0 +1,24 @@
+{
+  "lang":{
+    "lang":"fa"
+  },
+  "navbar": {
+    "home": "خانه",
+    "products": "محصولات",
+    "selling": "پرفروش ترین ها",
+    "Discounts": "تخفیف ها"
+  },
+  "heading": {
+    "DiscountedProducts": "محصولات تخفیف دار"
+  },
+  "menu": {
+    "offer": "پیشنهاد ویژه ما"
+  },
+  "footer": {
+    "about": "این متن درباره ی خدمات ماست این متن درباره ی خدمات ماست این متن درباره ی خدمات ماست",
+    "quickLinks": "دسترسی سریع",
+    "aboutUs": "درباره ما",
+    "contactInfo": "ارتباط با ما",
+    "businessHours": "ساعت کاری"
+  }
+}
