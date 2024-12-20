@@ -8,30 +8,29 @@ export default function ShopingCart() {
     const selector = useSelector((state) => state.cart);
     const sumCount = selector.cartItems.reduce((prev, current) => {
         return prev + current.count
-      }, 0)
+    }, 0)
 
 
     return (
         <>
-            <div className="  text-right mx-10  pt-10 px-10 border-bottom">
+            <div className="text-right mx-10  pt-10 px-10 border-bottom">
                 <span className="border-bottom border-b-2 rounded-sm" >سبد خرید</span>
                 <span className="rounded-sm text-white mr-2 px-3 pt-1 bg-[#a27753]">{sumCount}</span>
-                
             </div>
 
             <div className="px-10 mt-2 flex">
-                <div className="flex-col  w-1/3 h-fit p-5 border mr-2">
-                    <div className="flex  justify-between">
-                        <div>
-                            {selector.sumPrice}
-                        </div>
+                <div className="flex-col w-1/3 h-fit p-5 border mr-2">
+                    <div className=" flex flex-col md:flex-row justify-between">
                         <div>قیمت کالاها </div>
-                    </div>
-                    <div className="flex justify-between mt-3">
                         <div>
                             {selector.sumPrice}
                         </div>
+                    </div>
+                    <div className=" flex flex-col md:flex-row justify-between mt-3">
                         <div>جمع سبد خرید</div>
+                        <div>
+                            {selector.sumPrice}
+                        </div>
                     </div>
                     <div className="flex  justify-between">
                         <Link href={"/"}
@@ -53,8 +52,10 @@ export default function ShopingCart() {
                             />
                         )}
                     </div> : <div className="w-2/3">
-                        <h2 className="text-center text-white hover:text-[#6B4423] bg-[#a27753] py-10 rounded-lg text-xl">
-                            <Link href={'/'}>-----  بازگشت به صفحه ی اصلی  -----</Link>
+                        <h2 className="flex flex-col items-center justify-center gap-3 md:flex-row text-center text-white bg-[#a27753] py-10 rounded-lg text-xl">
+                            <span>---------</span>
+                            <Link href={'/'} className="hover:text-[#6B4423] hover:text-2xl transition-all duration-300 ease-linear">  بازگشت به صفحه ی اصلی  </Link>
+                            <span>---------</span>
                         </h2>
                     </div>
                 }

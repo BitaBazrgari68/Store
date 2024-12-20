@@ -11,13 +11,13 @@ export default function Card({ img, id, title, price }) {
     const selector = useSelector((state) => state.cart);
     const isItem = selector.cartItems?.filter((row) => row.id === id)[0]?.count
     return (
-        <div className="product-item flex flex-row  justify-between">
+        <div className="product-item flex flex-col md:flex-row  justify-between">
             
             <Image src={img}
                 alt={title}
                 width={100}
                 height={100}
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                className="object-cover w-48 rounded-t-lg h-auto"
             />
             <div className="flex flex-col text-2xl ">
                 <div className="flex flex-row justify-between items-center py-5 ">
